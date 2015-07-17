@@ -1,0 +1,22 @@
+﻿<Window x:Class="BackGroundWorkerExample.CardShuffle"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CardShuffle" Height="130" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="4*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0">
+            <Button Content="Fisher and Yates" Name="FisherAndYatesButton" Click="FisherAndYatesButton_OnClick"></Button>                
+            <Button Content="Modern One" Name="MordernButton" Click="MordernButton_OnClick"></Button>
+        </StackPanel>
+        
+        <StackPanel Grid.Column="1">
+            <Label Name="ResultLabel" FontSize="36" />
+            <Label Name="ElapsedTimeLabel" ></Label>
+        </StackPanel>
+
+    </Grid>
+</Window>

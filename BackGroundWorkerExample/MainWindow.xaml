@@ -1,0 +1,17 @@
+﻿<Window x:Class="BackGroundWorkerExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <DockPanel Margin="10">
+            <DockPanel DockPanel.Dock="Top">
+                <Button Name="SynchronousCalculationButton" Click="SynchronousCalculation_Click" DockPanel.Dock="Left" HorizontalAlignment="Left">Synchronous (same thread)</Button>
+                <Button Name="AsynchronousCalculationButton" Click="AsynchronousCalculation_Click" DockPanel.Dock="Right" HorizontalAlignment="Right">Asynchronous (worker thread)</Button>
+            </DockPanel>
+            <ProgressBar DockPanel.Dock="Bottom" Height="18" Name="CalculationProgressBar" />
+
+            <ListBox Name="ResultsListBox" Margin="0,10" />
+
+        </DockPanel>
+    </Grid>
+</Window>

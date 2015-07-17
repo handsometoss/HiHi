@@ -1,0 +1,17 @@
+﻿<Window x:Class="BackGroundWorkerExample.CopyTest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CopyTest" Height="300" Width="300">
+        <!--Closing="CopyTest_OnClosing">-->
+    <Grid>
+        <StackPanel>
+            <Button Click="ButtonCopy_OnClick">Copy</Button>
+            <Button Click="ButtonCancel_OnClick">Cancel Copy</Button>
+            <Button Click="ButtonDispose_OnClick">Dispose</Button>
+            <Button Click="ButtonGenWorker_OnClick">Generate Worker</Button>
+            <TextBox Name="WorkerIsWorking"></TextBox>
+            <TextBox Name="PendingWorker"></TextBox>
+        </StackPanel>
+        
+    </Grid>
+</Window>
